@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div id="app">
+      <h2>Has pulsado {{n}} veces</h2>
+    <button v-on:click="n++">Pulsame!!!</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    var app=new Vue({
+      el: '#app',
+      data:{ 
+        n: 0
+      }      
+    })
+  </script>
+</body>
+</html>
